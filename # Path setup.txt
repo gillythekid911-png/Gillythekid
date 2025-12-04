@@ -1,0 +1,47 @@
+# Path setup
+$projectRoot = "$env:USERPROFILE\projects\gillythekid-old"
+$srcFolder = Join-Path $projectRoot "src"
+$envFile = Join-Path $projectRoot ".env"
+$firebaseFile = Join-Path $srcFolder "firebase.js"
+
+# Create src folder if it doesn't exist
+if (-Not (Test-Path $srcFolder)) {
+    New-Item -ItemType Directory -Path $srcFolder
+}
+
+# Create .env with placeholders
+@"
+REACT_APP_FIREBASE_API_KEY=your_api_key_here
+REACT_APP_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+REACT_APP_FIREBASE_PROJECT_ID=your_project_id
+REACT_APP_FIREBASE_STORAGE_BUCKET=your_project.appspot.com
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+REACT_APP_FIREBASE_APP_ID=your_app_id
+REACT_APP_FIREBASE_MEASUREMENT_ID=your_measurement_id
+"@ | Set-Content -Path $envFile -Encoding UTF8
+
+# Create src/firebase.js
+@"
+// Import the functions you need from the SDKs you need
+import { initializeApp } from 'firebase/app';
+import { getAnalytics } from 'firebase/analytics';
+
+const firebaseConfig = {
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+export { app, analytics };
+"@ | Set-Content -Path $firebaseFile -Encoding UTF8
+
+Write-Host "✅ .env and src/firebase.js have been created with placeholders."
+Write-Host "Please fill in your Firebase project values in the .env file and restart your dev server."
