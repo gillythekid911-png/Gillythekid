@@ -1,0 +1,44 @@
+import React from "react";
+
+export default function Landing() {
+  return (
+    <main style={styles.main}>
+      <section style={styles.hero}>
+        <h1 style={styles.title}>Welcome to GillyTheKid</h1>
+        <p style={styles.subtitle}>
+          A modern React + Firebase powered platform
+        </p>
+        <button style={styles.button}>Get Started</button>
+      </section>
+    </main>
+  );
+}
+
+const styles = {
+  main: {
+    fontFamily: "Arial, sans-serif",
+    textAlign: "center",
+  },
+  hero: {
+    padding: "100px 20px",
+    background: "linear-gradient(135deg, #111, #333)",
+    color: "#fff",
+  },
+  title: {
+    fontSize: "3rem",
+    marginBottom: "20px",
+  },
+  subtitle: {
+    fontSize: "1.2rem",
+    marginBottom: "30px",
+  },
+  button: {
+    padding: "12px 24px",
+    fontSize: "1rem",
+    background: "#ff3c00",
+    border: "none",
+    color: "#fff",
+    cursor: "pointer",
+    borderRadius: "6px",
+  },
+};

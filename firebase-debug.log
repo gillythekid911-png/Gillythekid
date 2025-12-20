@@ -1,0 +1,77 @@
+[debug] [2025-12-17T15:30:30.688Z] ----------------------------------------------------------------------
+[debug] [2025-12-17T15:30:30.690Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\gilbe\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init functions
+[debug] [2025-12-17T15:30:30.691Z] CLI Version:   14.26.0
+[debug] [2025-12-17T15:30:30.691Z] Platform:      win32
+[debug] [2025-12-17T15:30:30.691Z] Node Version:  v25.2.1
+[debug] [2025-12-17T15:30:30.691Z] Time:          Wed Dec 17 2025 10:30:30 GMT-0500 (Eastern Standard Time)
+[debug] [2025-12-17T15:30:30.691Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-12-17T15:30:30.692Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\gilbe\OneDrive\Documents\gillythekid
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2025-12-17T15:30:30.954Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2025-12-17T15:30:30.955Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[debug] [2025-12-17T15:30:37.411Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-12-17T15:30:37.411Z] > authorizing via signed-in user (gillythekid911@gmail.com)
+[debug] [2025-12-17T15:30:37.412Z] Checked if tokens are valid: false, expires at: 1765742988866
+[debug] [2025-12-17T15:30:37.412Z] Checked if tokens are valid: false, expires at: 1765742988866
+[debug] [2025-12-17T15:30:37.413Z] > refreshing access token with scopes: []
+[debug] [2025-12-17T15:30:37.413Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-12-17T15:30:37.413Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-12-17T15:30:37.546Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-12-17T15:30:37.546Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-12-17T15:30:37.551Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/gillythekid-c6c48 [none]
+[debug] [2025-12-17T15:30:37.805Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/gillythekid-c6c48 200
+[debug] [2025-12-17T15:30:37.805Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/gillythekid-c6c48 {"projectId":"gillythekid-c6c48","projectNumber":"1012835367784","displayName":"gillythekid","name":"projects/gillythekid-c6c48","resources":{"hostingSite":"gillythekid-c6c48"},"state":"ACTIVE","etag":"1_bfe9480c-a0c3-4558-82c8-9fd426fc0a8b"}
+[info] i  Using project gillythekid-c6c48 (gillythekid) . 
+[info] 
+=== Functions Setup
+[debug] [2025-12-17T15:30:37.809Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-12-17T15:30:37.810Z] > authorizing via signed-in user (gillythekid911@gmail.com)
+[debug] [2025-12-17T15:30:37.810Z] [iam] checking project gillythekid-c6c48 for permissions ["firebase.projects.get"]
+[debug] [2025-12-17T15:30:37.810Z] Checked if tokens are valid: true, expires at: 1765989036546
+[debug] [2025-12-17T15:30:37.810Z] Checked if tokens are valid: true, expires at: 1765989036546
+[debug] [2025-12-17T15:30:37.810Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/gillythekid-c6c48:testIamPermissions [none]
+[debug] [2025-12-17T15:30:37.810Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/gillythekid-c6c48:testIamPermissions x-goog-quota-user=projects/gillythekid-c6c48
+[debug] [2025-12-17T15:30:37.810Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/gillythekid-c6c48:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-12-17T15:30:38.046Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/gillythekid-c6c48:testIamPermissions 200
+[debug] [2025-12-17T15:30:38.046Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/gillythekid-c6c48:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/requirements.txt 
+[info] +  Wrote functions/.gitignore 
+[info] +  Wrote functions/main.py 
+[debug] [2025-12-17T16:03:12.793Z] Running command with virtualenv: command="C:\Users\gilbe\OneDrive\Documents\gillythekid\functions\venv\Scripts\activate.bat", args=["","&&","pip3","install","--upgrade","pip"]
+[debug] [2025-12-17T16:03:15.635Z] Error: spawn "C:\Users\gilbe\OneDrive\Documents\gillythekid\functions\venv\Scripts\activate.bat" ENOENT
+    at notFoundError (C:\Users\gilbe\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:6:26)
+    at verifyENOENT (C:\Users\gilbe\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:40:16)
+    at cp.emit (C:\Users\gilbe\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:27:25)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+[error] 
+[error] Error: An unexpected error has occurred.
