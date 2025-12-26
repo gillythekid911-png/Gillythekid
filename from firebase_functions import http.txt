@@ -1,0 +1,19 @@
+from firebase_functions import https_fn
+from firebase_functions.options import set_global_options
+import functions_framework
+import google.generativeai as genai
+import os
+
+set_global_options(max_instances=5)
+
+@https_fn.on_request()
+def ai_prompt(req: https_fn.Request) -> https_fn.Response:
+    data = req.get_json(silent=True)
+    prompt = data.get("prompt", "Hello")
+
+    genai.configure(api_key=os.environ.get("GEMINI_KEY"))
+
+    model = genai.GenerativeModel("gemini-pro")
+    response = model.generate_content(prompt)
+
+    return https_fn.Response(response.text)

@@ -1,0 +1,39 @@
+[debug] [2025-12-21T21:26:41.354Z] ----------------------------------------------------------------------
+[debug] [2025-12-21T21:26:41.356Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\gilbe\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js functions:config:set gemini.key=YOUR_REAL_API_KEY
+[debug] [2025-12-21T21:26:41.356Z] CLI Version:   15.1.0
+[debug] [2025-12-21T21:26:41.356Z] Platform:      win32
+[debug] [2025-12-21T21:26:41.356Z] Node Version:  v25.2.1
+[debug] [2025-12-21T21:26:41.356Z] Time:          Sun Dec 21 2025 16:26:41 GMT-0500 (Eastern Standard Time)
+[debug] [2025-12-21T21:26:41.356Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-12-21T21:26:41.496Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-12-21T21:26:41.496Z] > authorizing via signed-in user (gillythekid911@gmail.com)
+[debug] [2025-12-21T21:26:41.496Z] [iam] checking project gillythekid-c6c48 for permissions ["firebase.projects.get","runtimeconfig.configs.create","runtimeconfig.configs.delete","runtimeconfig.configs.get","runtimeconfig.configs.list","runtimeconfig.configs.update","runtimeconfig.variables.create","runtimeconfig.variables.delete","runtimeconfig.variables.get","runtimeconfig.variables.list","runtimeconfig.variables.update"]
+[debug] [2025-12-21T21:26:41.497Z] Checked if tokens are valid: true, expires at: 1766355974139
+[debug] [2025-12-21T21:26:41.497Z] Checked if tokens are valid: true, expires at: 1766355974139
+[debug] [2025-12-21T21:26:41.498Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/gillythekid-c6c48:testIamPermissions [none]
+[debug] [2025-12-21T21:26:41.498Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/gillythekid-c6c48:testIamPermissions x-goog-quota-user=projects/gillythekid-c6c48
+[debug] [2025-12-21T21:26:41.498Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/gillythekid-c6c48:testIamPermissions {"permissions":["firebase.projects.get","runtimeconfig.configs.create","runtimeconfig.configs.delete","runtimeconfig.configs.get","runtimeconfig.configs.list","runtimeconfig.configs.update","runtimeconfig.variables.create","runtimeconfig.variables.delete","runtimeconfig.variables.get","runtimeconfig.variables.list","runtimeconfig.variables.update"]}
+[debug] [2025-12-21T21:26:41.729Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/gillythekid-c6c48:testIamPermissions 200
+[debug] [2025-12-21T21:26:41.729Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/gillythekid-c6c48:testIamPermissions {"permissions":["firebase.projects.get","runtimeconfig.configs.create","runtimeconfig.configs.delete","runtimeconfig.configs.get","runtimeconfig.configs.list","runtimeconfig.configs.update","runtimeconfig.variables.create","runtimeconfig.variables.delete","runtimeconfig.variables.get","runtimeconfig.variables.list","runtimeconfig.variables.update"]}
+[debug] [2025-12-21T21:26:41.730Z] Checked if tokens are valid: true, expires at: 1766355974139
+[debug] [2025-12-21T21:26:41.730Z] Checked if tokens are valid: true, expires at: 1766355974139
+[debug] [2025-12-21T21:26:41.730Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gillythekid-c6c48/configs/gemini/variables/key [none]
+[debug] [2025-12-21T21:26:41.931Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gillythekid-c6c48/configs/gemini/variables/key 200
+[debug] [2025-12-21T21:26:41.931Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gillythekid-c6c48/configs/gemini/variables/key {"name":"projects/gillythekid-c6c48/configs/gemini/variables/key","updateTime":"2025-12-17T20:49:12.994344982Z","text":"PASTE_YOUR_API_KEY_HERE"}
+[debug] [2025-12-21T21:26:41.931Z] Checked if tokens are valid: true, expires at: 1766355974139
+[debug] [2025-12-21T21:26:41.931Z] Checked if tokens are valid: true, expires at: 1766355974139
+[debug] [2025-12-21T21:26:41.931Z] >>> [apiv2][query] PUT https://runtimeconfig.googleapis.com/v1beta1/projects/gillythekid-c6c48/configs/gemini/variables/key [none]
+[debug] [2025-12-21T21:26:41.931Z] >>> [apiv2][body] PUT https://runtimeconfig.googleapis.com/v1beta1/projects/gillythekid-c6c48/configs/gemini/variables/key {"name":"/projects/gillythekid-c6c48/configs/gemini/variables/key","text":"YOUR_REAL_API_KEY"}
+[debug] [2025-12-21T21:26:42.186Z] <<< [apiv2][status] PUT https://runtimeconfig.googleapis.com/v1beta1/projects/gillythekid-c6c48/configs/gemini/variables/key 200
+[debug] [2025-12-21T21:26:42.186Z] <<< [apiv2][body] PUT https://runtimeconfig.googleapis.com/v1beta1/projects/gillythekid-c6c48/configs/gemini/variables/key {"name":"projects/gillythekid-c6c48/configs/gemini/variables/key","updateTime":"2025-12-21T21:26:41.969354897Z","state":"UPDATED","text":"YOUR_REAL_API_KEY"}
+[info] +  Functions config updated. 
+[info] 
+Please deploy your functions for the change to take effect by running firebase deploy --only functions
+
+[debug] [2025-12-21T21:26:47.272Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\gilbe\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:275:49)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7)
+[error] 
+[error] Error: An unexpected error has occurred.
