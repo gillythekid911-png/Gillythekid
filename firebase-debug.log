@@ -83,3 +83,44 @@ specVersion: v1alpha1
 
 Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
  
+[debug] [2026-01-04T20:52:32.973Z] File C:\Users\gilbe\OneDrive\Documents\gillythekid\functions\firebase.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\gilbe\\OneDrive\\Documents\\gillythekid\\functions\\firebase.json changed, reloading triggers"}}
+[debug] [2026-01-04T20:52:34.112Z] Customer code is not Node
+[debug] [2026-01-04T20:52:34.121Z] Validating python source
+[debug] [2026-01-04T20:52:34.121Z] Building python source
+[debug] [2026-01-04T20:52:34.146Z] Could not find functions.yaml. Must use http discovery
+[debug] [2026-01-04T20:52:34.208Z] Running command with virtualenv: command="C:\Users\gilbe\OneDrive\Documents\gillythekid\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2026-01-04T20:52:34.423Z] stdout: C:\Users\gilbe\OneDrive\Documents\gillythekid\functions\venv\Lib\site-packages\firebase_functions
+
+[debug] [2026-01-04T20:52:34.436Z] Running admin server with args: ["python.exe","\"C:\\Users\\gilbe\\OneDrive\\Documents\\gillythekid\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"gillythekid-c6c48","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"gillythekid-c6c48","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"gillythekid-c6c48.firebasestorage.app\",\"projectId\":\"gillythekid-c6c48\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\gilbe\\AppData\\Roaming\\firebase\\gillythekid911_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in C:\Users\gilbe\OneDrive\Documents\gillythekid\functions
+[debug] [2026-01-04T20:52:34.437Z] Running command with virtualenv: command="C:\Users\gilbe\OneDrive\Documents\gillythekid\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\gilbe\\OneDrive\\Documents\\gillythekid\\functions\\venv\\Lib\\site-packages\\firebase_functions\\private\\serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[error] 127.0.0.1 - - [04/Jan/2026 20:52:36] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2026-01-04T20:52:36.259Z] Got response from /__/functions.yaml endpoints:
+  ai_prompt:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: ai_prompt
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [04/Jan/2026 20:52:36] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[info] +  functions: Loaded functions definitions from source: ai_prompt. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ai_prompt."}}
