@@ -17,6 +17,16 @@
     "functions": {
       "host": "127.0.0.1",
       "port": 5051
+    },
+    "ui": {
+      "enabled": true
+    },
+    "singleProjectMode": true,
+    "auth": {
+      "port": 9099
+    },
+    "firestore": {
+      "port": 8080
     }
   }
 }
