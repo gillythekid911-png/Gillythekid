@@ -1,7 +1,6 @@
 ﻿{
   "functions": {
-    "source": ".",
-    "runtime": "python312"
+    "source": "functions"
   },
   "emulators": {
     "functions": {

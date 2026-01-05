@@ -1,5 +1,7 @@
 {
   "projects": {
     "default": "gillythekid-c6c48"
-  }
+  },
+  "targets": {},
+  "etags": {}
 }
