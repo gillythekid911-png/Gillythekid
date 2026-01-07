@@ -1,2 +1,0 @@
-mkdir .github\workflows
-notepad .github\workflows\deploy-functions.yml

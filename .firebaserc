@@ -1,7 +1,11 @@
 {
- {
-  "functions": {
-    "source": "functions"
+  {
+    "functions": {
+      "source": "functions"
+    }
   }
-}
- 
+{
+    "projects": {
+      "default": "gillythekid-c6c48"
+    }
+  }
