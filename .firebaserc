@@ -1,11 +1,7 @@
 {
-  {
-    "functions": {
-      "source": "functions"
-    }
-  }
-{
-    "projects": {
-      "default": "gillythekid-c6c48"
-    }
-  }
+  "projects": {
+    "default": "gillythekid-c6c48"
+  },
+  "targets": {},
+  "etags": {}
+}
