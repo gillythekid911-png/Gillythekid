@@ -6,11 +6,11 @@ on:
       - main
 
 jobs:
-  deploy:
+  deploy-functions:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Use Node.js 18
@@ -26,7 +26,7 @@ jobs:
       - name: Install Firebase CLI
         run: npm install -g firebase-tools
 
-      - name: Deploy Functions
+      - name: Authenticate with Google Cloud
         env:
           GOOGLE_APPLICATION_CREDENTIALS_JSON: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS_JSON }}
         run: |
