@@ -1,2 +1,4 @@
-firebase_functions~=0.1.0
-firebase-admin>=6.2.0
+ firebase-functions==0.4.2
+firebase-admin>=6.4.0
+
+ 
