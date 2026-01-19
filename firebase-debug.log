@@ -605,3 +605,167 @@ specVersion: v1alpha1
 [debug] [2026-01-18T18:28:47.943Z] <<< [apiv2][status] GET https://artifactregistry.googleapis.com/v1/projects/gillythekid-c6c48/locations/us-central1/repositories/gcf-artifacts 200
 [debug] [2026-01-18T18:28:47.943Z] <<< [apiv2][body] GET https://artifactregistry.googleapis.com/v1/projects/gillythekid-c6c48/locations/us-central1/repositories/gcf-artifacts {"name":"projects/gillythekid-c6c48/locations/us-central1/repositories/gcf-artifacts","format":"DOCKER","description":"This repository is created and used by Cloud Functions for storing function docker images.","labels":{"goog-managed-by":"cloudfunctions"},"createTime":"2026-01-12T01:56:32.632161Z","updateTime":"2026-01-18T18:28:22.425112Z","mode":"STANDARD_REPOSITORY","sizeBytes":"356480647","vulnerabilityScanningConfig":{"lastEnableTime":"2026-01-12T01:56:11.705386303Z","enablementState":"SCANNING_DISABLED","enablementStateReason":"API containerscanning.googleapis.com is not enabled."},"satisfiesPzi":true,"registryUri":"us-central1-docker.pkg.dev/gillythekid-c6c48/gcf-artifacts"}
 [warn] !  functions: No cleanup policy detected for repositories in us-central1. This may result in a small monthly bill as container images accumulate over time. 
+[debug] [2026-01-18T19:06:19.676Z] ----------------------------------------------------------------------
+[debug] [2026-01-18T19:06:19.678Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\gilbe\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions
+[debug] [2026-01-18T19:06:19.678Z] CLI Version:   15.3.1
+[debug] [2026-01-18T19:06:19.678Z] Platform:      win32
+[debug] [2026-01-18T19:06:19.678Z] Node Version:  v25.2.1
+[debug] [2026-01-18T19:06:19.678Z] Time:          Sun Jan 18 2026 14:06:19 GMT-0500 (Eastern Standard Time)
+[debug] [2026-01-18T19:06:19.678Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-01-18T19:06:20.735Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-18T19:06:20.735Z] > authorizing via signed-in user (gillythekid911@gmail.com)
+[debug] [2026-01-18T19:06:20.735Z] [iam] checking project gillythekid-c6c48 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2026-01-18T19:06:20.736Z] Checked if tokens are valid: true, expires at: 1768764408300
+[debug] [2026-01-18T19:06:20.736Z] Checked if tokens are valid: true, expires at: 1768764408300
+[debug] [2026-01-18T19:06:20.737Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/gillythekid-c6c48:testIamPermissions [none]
+[debug] [2026-01-18T19:06:20.737Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/gillythekid-c6c48:testIamPermissions x-goog-quota-user=projects/gillythekid-c6c48
+[debug] [2026-01-18T19:06:20.737Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/gillythekid-c6c48:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2026-01-18T19:06:20.922Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/gillythekid-c6c48:testIamPermissions 200
+[debug] [2026-01-18T19:06:20.922Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/gillythekid-c6c48:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2026-01-18T19:06:20.922Z] Checked if tokens are valid: true, expires at: 1768764408300
+[debug] [2026-01-18T19:06:20.922Z] Checked if tokens are valid: true, expires at: 1768764408300
+[debug] [2026-01-18T19:06:20.923Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/gillythekid-c6c48/serviceAccounts/gillythekid-c6c48@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2026-01-18T19:06:20.923Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/gillythekid-c6c48/serviceAccounts/gillythekid-c6c48@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2026-01-18T19:06:21.067Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/gillythekid-c6c48/serviceAccounts/gillythekid-c6c48@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2026-01-18T19:06:21.067Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/gillythekid-c6c48/serviceAccounts/gillythekid-c6c48@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'gillythekid-c6c48'...
+[info] 
+[info] i  deploying functions 
+[debug] [2026-01-18T19:06:21.070Z] Checked if tokens are valid: true, expires at: 1768764408300
+[debug] [2026-01-18T19:06:21.070Z] Checked if tokens are valid: true, expires at: 1768764408300
+[debug] [2026-01-18T19:06:21.070Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/gillythekid-c6c48 [none]
+[debug] [2026-01-18T19:06:21.248Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/gillythekid-c6c48 200
+[debug] [2026-01-18T19:06:21.248Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/gillythekid-c6c48 {"projectNumber":"1012835367784","projectId":"gillythekid-c6c48","lifecycleState":"ACTIVE","name":"gillythekid","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-12-01T19:16:53.201769Z"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2026-01-18T19:06:21.250Z] Checked if tokens are valid: true, expires at: 1768764408300
+[debug] [2026-01-18T19:06:21.250Z] Checked if tokens are valid: true, expires at: 1768764408300
+[debug] [2026-01-18T19:06:21.250Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/gillythekid-c6c48/adminSdkConfig [none]
+[debug] [2026-01-18T19:06:21.564Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/gillythekid-c6c48/adminSdkConfig 200
+[debug] [2026-01-18T19:06:21.564Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/gillythekid-c6c48/adminSdkConfig {"projectId":"gillythekid-c6c48","storageBucket":"gillythekid-c6c48.firebasestorage.app"}
+[debug] [2026-01-18T19:06:21.564Z] Checked if tokens are valid: true, expires at: 1768764408300
+[debug] [2026-01-18T19:06:21.564Z] Checked if tokens are valid: true, expires at: 1768764408300
+[debug] [2026-01-18T19:06:21.564Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gillythekid-c6c48/configs [none]
+[debug] [2026-01-18T19:06:21.942Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gillythekid-c6c48/configs 200
+[debug] [2026-01-18T19:06:21.943Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gillythekid-c6c48/configs {"configs":[{"name":"projects/gillythekid-c6c48/configs/googleai"},{"name":"projects/gillythekid-c6c48/configs/gemini"}]}
+[debug] [2026-01-18T19:06:21.943Z] Checked if tokens are valid: true, expires at: 1768764408300
+[debug] [2026-01-18T19:06:21.943Z] Checked if tokens are valid: true, expires at: 1768764408300
+[debug] [2026-01-18T19:06:21.943Z] Checked if tokens are valid: true, expires at: 1768764408300
+[debug] [2026-01-18T19:06:21.943Z] Checked if tokens are valid: true, expires at: 1768764408300
+[debug] [2026-01-18T19:06:21.943Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gillythekid-c6c48/configs/googleai/variables [none]
+[debug] [2026-01-18T19:06:21.943Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gillythekid-c6c48/configs/gemini/variables [none]
+[debug] [2026-01-18T19:06:22.128Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gillythekid-c6c48/configs/googleai/variables 200
+[debug] [2026-01-18T19:06:22.128Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gillythekid-c6c48/configs/googleai/variables {"variables":[{"name":"projects/gillythekid-c6c48/configs/googleai/variables/key","updateTime":"2025-12-17T16:45:04.583315851Z"}]}
+[debug] [2026-01-18T19:06:22.128Z] Checked if tokens are valid: true, expires at: 1768764408300
+[debug] [2026-01-18T19:06:22.128Z] Checked if tokens are valid: true, expires at: 1768764408300
+[debug] [2026-01-18T19:06:22.128Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gillythekid-c6c48/configs/googleai/variables/key [none]
+[debug] [2026-01-18T19:06:22.203Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gillythekid-c6c48/configs/gemini/variables 200
+[debug] [2026-01-18T19:06:22.203Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gillythekid-c6c48/configs/gemini/variables {"variables":[{"name":"projects/gillythekid-c6c48/configs/gemini/variables/key","updateTime":"2025-12-22T19:22:18.927098482Z"}]}
+[debug] [2026-01-18T19:06:22.203Z] Checked if tokens are valid: true, expires at: 1768764408300
+[debug] [2026-01-18T19:06:22.203Z] Checked if tokens are valid: true, expires at: 1768764408300
+[debug] [2026-01-18T19:06:22.203Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gillythekid-c6c48/configs/gemini/variables/key [none]
+[debug] [2026-01-18T19:06:22.315Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gillythekid-c6c48/configs/gemini/variables/key 200
+[debug] [2026-01-18T19:06:22.315Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gillythekid-c6c48/configs/gemini/variables/key {"name":"projects/gillythekid-c6c48/configs/gemini/variables/key","updateTime":"2025-12-22T19:22:18.927098482Z","text":"YOUR_REAL_GEMINI_API_KEY"}
+[debug] [2026-01-18T19:06:22.410Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gillythekid-c6c48/configs/googleai/variables/key 200
+[debug] [2026-01-18T19:06:22.410Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gillythekid-c6c48/configs/googleai/variables/key {"name":"projects/gillythekid-c6c48/configs/googleai/variables/key","updateTime":"2025-12-17T16:45:04.583315851Z","text":"YOUR_API_KEY_HERE"}
+[debug] [2026-01-18T19:06:22.411Z] Customer code is not Node
+[debug] [2026-01-18T19:06:22.411Z] Validating python source
+[debug] [2026-01-18T19:06:22.412Z] Building python source
+[info] i  functions: Loading and analyzing source code for codebase default to determine what to deploy 
+[debug] [2026-01-18T19:06:22.412Z] Could not find functions.yaml. Must use http discovery
+[debug] [2026-01-18T19:06:22.418Z] Running command with virtualenv: command="C:\Users\gilbe\OneDrive\Documents\gillythekid\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2026-01-18T19:06:22.449Z] stderr: The system cannot find the path specified.
+
+[debug] [2026-01-18T19:06:22.452Z] Error: spawn "C:\Users\gilbe\OneDrive\Documents\gillythekid\functions\venv\Scripts\activate.bat" ENOENT
+    at notFoundError (C:\Users\gilbe\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:6:26)
+    at verifyENOENT (C:\Users\gilbe\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:40:16)
+    at cp.emit (C:\Users\gilbe\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:27:25)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-01-18T19:06:49.024Z] ----------------------------------------------------------------------
+[debug] [2026-01-18T19:06:49.026Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\gilbe\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions --debug
+[debug] [2026-01-18T19:06:49.026Z] CLI Version:   15.3.1
+[debug] [2026-01-18T19:06:49.026Z] Platform:      win32
+[debug] [2026-01-18T19:06:49.026Z] Node Version:  v25.2.1
+[debug] [2026-01-18T19:06:49.026Z] Time:          Sun Jan 18 2026 14:06:49 GMT-0500 (Eastern Standard Time)
+[debug] [2026-01-18T19:06:49.026Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-01-18T19:06:50.085Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-18T19:06:50.087Z] > authorizing via signed-in user (gillythekid911@gmail.com)
+[debug] [2026-01-18T19:06:50.087Z] [iam] checking project gillythekid-c6c48 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2026-01-18T19:06:50.089Z] Checked if tokens are valid: true, expires at: 1768764408300
+[debug] [2026-01-18T19:06:50.089Z] Checked if tokens are valid: true, expires at: 1768764408300
+[debug] [2026-01-18T19:06:50.090Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/gillythekid-c6c48:testIamPermissions [none]
+[debug] [2026-01-18T19:06:50.090Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/gillythekid-c6c48:testIamPermissions x-goog-quota-user=projects/gillythekid-c6c48
+[debug] [2026-01-18T19:06:50.090Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/gillythekid-c6c48:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2026-01-18T19:06:50.397Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/gillythekid-c6c48:testIamPermissions 200
+[debug] [2026-01-18T19:06:50.398Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/gillythekid-c6c48:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2026-01-18T19:06:50.398Z] Checked if tokens are valid: true, expires at: 1768764408300
+[debug] [2026-01-18T19:06:50.398Z] Checked if tokens are valid: true, expires at: 1768764408300
+[debug] [2026-01-18T19:06:50.399Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/gillythekid-c6c48/serviceAccounts/gillythekid-c6c48@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2026-01-18T19:06:50.399Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/gillythekid-c6c48/serviceAccounts/gillythekid-c6c48@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2026-01-18T19:06:50.696Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/gillythekid-c6c48/serviceAccounts/gillythekid-c6c48@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2026-01-18T19:06:50.696Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/gillythekid-c6c48/serviceAccounts/gillythekid-c6c48@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'gillythekid-c6c48'...
+[info] 
+[info] i  deploying functions 
+[debug] [2026-01-18T19:06:50.700Z] Checked if tokens are valid: true, expires at: 1768764408300
+[debug] [2026-01-18T19:06:50.700Z] Checked if tokens are valid: true, expires at: 1768764408300
+[debug] [2026-01-18T19:06:50.700Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/gillythekid-c6c48 [none]
+[debug] [2026-01-18T19:06:50.867Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/gillythekid-c6c48 200
+[debug] [2026-01-18T19:06:50.868Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/gillythekid-c6c48 {"projectNumber":"1012835367784","projectId":"gillythekid-c6c48","lifecycleState":"ACTIVE","name":"gillythekid","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-12-01T19:16:53.201769Z"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2026-01-18T19:06:50.870Z] Checked if tokens are valid: true, expires at: 1768764408300
+[debug] [2026-01-18T19:06:50.870Z] Checked if tokens are valid: true, expires at: 1768764408300
+[debug] [2026-01-18T19:06:50.870Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/gillythekid-c6c48/adminSdkConfig [none]
+[debug] [2026-01-18T19:06:51.121Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/gillythekid-c6c48/adminSdkConfig 200
+[debug] [2026-01-18T19:06:51.121Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/gillythekid-c6c48/adminSdkConfig {"projectId":"gillythekid-c6c48","storageBucket":"gillythekid-c6c48.firebasestorage.app"}
+[debug] [2026-01-18T19:06:51.122Z] Checked if tokens are valid: true, expires at: 1768764408300
+[debug] [2026-01-18T19:06:51.122Z] Checked if tokens are valid: true, expires at: 1768764408300
+[debug] [2026-01-18T19:06:51.122Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gillythekid-c6c48/configs [none]
+[debug] [2026-01-18T19:06:51.404Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gillythekid-c6c48/configs 200
+[debug] [2026-01-18T19:06:51.405Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gillythekid-c6c48/configs {"configs":[{"name":"projects/gillythekid-c6c48/configs/googleai"},{"name":"projects/gillythekid-c6c48/configs/gemini"}]}
+[debug] [2026-01-18T19:06:51.405Z] Checked if tokens are valid: true, expires at: 1768764408300
+[debug] [2026-01-18T19:06:51.405Z] Checked if tokens are valid: true, expires at: 1768764408300
+[debug] [2026-01-18T19:06:51.405Z] Checked if tokens are valid: true, expires at: 1768764408300
+[debug] [2026-01-18T19:06:51.405Z] Checked if tokens are valid: true, expires at: 1768764408300
+[debug] [2026-01-18T19:06:51.406Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gillythekid-c6c48/configs/googleai/variables [none]
+[debug] [2026-01-18T19:06:51.406Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gillythekid-c6c48/configs/gemini/variables [none]
+[debug] [2026-01-18T19:06:51.661Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gillythekid-c6c48/configs/googleai/variables 200
+[debug] [2026-01-18T19:06:51.662Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gillythekid-c6c48/configs/googleai/variables {"variables":[{"name":"projects/gillythekid-c6c48/configs/googleai/variables/key","updateTime":"2025-12-17T16:45:04.583315851Z"}]}
+[debug] [2026-01-18T19:06:51.662Z] Checked if tokens are valid: true, expires at: 1768764408300
+[debug] [2026-01-18T19:06:51.663Z] Checked if tokens are valid: true, expires at: 1768764408300
+[debug] [2026-01-18T19:06:51.663Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gillythekid-c6c48/configs/googleai/variables/key [none]
+[debug] [2026-01-18T19:06:51.708Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gillythekid-c6c48/configs/gemini/variables 200
+[debug] [2026-01-18T19:06:51.708Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gillythekid-c6c48/configs/gemini/variables {"variables":[{"name":"projects/gillythekid-c6c48/configs/gemini/variables/key","updateTime":"2025-12-22T19:22:18.927098482Z"}]}
+[debug] [2026-01-18T19:06:51.709Z] Checked if tokens are valid: true, expires at: 1768764408300
+[debug] [2026-01-18T19:06:51.709Z] Checked if tokens are valid: true, expires at: 1768764408300
+[debug] [2026-01-18T19:06:51.709Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gillythekid-c6c48/configs/gemini/variables/key [none]
+[debug] [2026-01-18T19:06:51.934Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gillythekid-c6c48/configs/gemini/variables/key 200
+[debug] [2026-01-18T19:06:51.934Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gillythekid-c6c48/configs/gemini/variables/key {"name":"projects/gillythekid-c6c48/configs/gemini/variables/key","updateTime":"2025-12-22T19:22:18.927098482Z","text":"YOUR_REAL_GEMINI_API_KEY"}
+[debug] [2026-01-18T19:06:51.950Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gillythekid-c6c48/configs/googleai/variables/key 200
+[debug] [2026-01-18T19:06:51.950Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gillythekid-c6c48/configs/googleai/variables/key {"name":"projects/gillythekid-c6c48/configs/googleai/variables/key","updateTime":"2025-12-17T16:45:04.583315851Z","text":"YOUR_API_KEY_HERE"}
+[debug] [2026-01-18T19:06:51.951Z] Customer code is not Node
+[debug] [2026-01-18T19:06:51.952Z] Validating python source
+[debug] [2026-01-18T19:06:51.952Z] Building python source
+[info] i  functions: Loading and analyzing source code for codebase default to determine what to deploy 
+[debug] [2026-01-18T19:06:51.953Z] Could not find functions.yaml. Must use http discovery
+[debug] [2026-01-18T19:06:51.958Z] Running command with virtualenv: command="C:\Users\gilbe\OneDrive\Documents\gillythekid\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2026-01-18T19:06:51.971Z] stderr: The system cannot find the path specified.
+
+[debug] [2026-01-18T19:06:51.974Z] Error: spawn "C:\Users\gilbe\OneDrive\Documents\gillythekid\functions\venv\Scripts\activate.bat" ENOENT
+    at notFoundError (C:\Users\gilbe\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:6:26)
+    at verifyENOENT (C:\Users\gilbe\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:40:16)
+    at cp.emit (C:\Users\gilbe\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:27:25)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+[error] 
+[error] Error: An unexpected error has occurred.
